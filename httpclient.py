@@ -77,7 +77,7 @@ class HTTPClient(object):
     def parse(self, url):
         parse_result = urlparse(url)
         print("PARSE RESULTS: ", parse_result)
-        self.host_name = parse_result.hostname #parse_result.netloc
+        self.host_name = parse_result.hostname  #parse_result.netloc
         print("HOST NAME IS: ", self.host_name)
         self.host = self.host_name.split(":")[0]
         print("HOST IS: ", self.host)
